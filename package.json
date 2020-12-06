@@ -1,0 +1,27 @@
+{
+  "name": "@leofcoin/lite",
+  "version": "0.1.0",
+  "main": "dist/commonjs/lite.js",
+  "module": "dist/module/lite.js",
+  "browser": "dist/browser/lite.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "build": "rollup -c",
+    "c": "rollup -c",
+    "b": "browserify lite.js -o dist/browser/lite.js --standalone LeofcoinLite"
+  },
+  "description": "project-template",
+  "repository": "https://github.com/vandeurenglenn/lite",
+  "author": "vandeurenglenn <vandeurenglenn@gmail.com>",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "browserify": "^17.0.0",
+    "rollup": "^2.34.2"
+  },
+  "dependencies": {
+    "@leofcoin/peernet": "^0.2.0"
+  }
+}
